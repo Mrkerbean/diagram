@@ -41,15 +41,26 @@ Expired listings are removed from traffic.
 
 ## Diagram Explanation:
 -Client (Web Browser): Interacts with the entire system through HTTPS, ensuring secure communication.
+
 -Load Balancer: Distributes incoming traffic and applies rate limiting to prevent abuse.
+
 -Web Server: Uses CSP headers for security and forwards requests to the application server.
+
 -Application Server: Handles the main application logic, divided into frontend and backend services.
+
 -Frontend (React.js): Renders the user interface.
+
 -Backend API (Node.js + Express.js): Handles business logic and data processing.
+
 -Authentication Service (OAuth 2.0 + JWT): Manages user authentication and authorization.
+
 -Database (PostgreSQL): Stores persistent data with optimistic concurrency control for handling bid conflicts.
+
 -Caching Layer (Redis): Provides fast access to frequently accessed data and temporary storage for bid conflicts.
+
 -Message Queue (RabbitMQ): Ensures ordered processing of bids and other time-sensitive operations.
+
 -Static Content (CDN): Delivers static content (e.g., images, stylesheets) efficiently.
+
 -RBAC System: Manages roles and permissions for users, integrated with the backend API.
 
