@@ -1,9 +1,152 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" version="24.7.6">
-  <diagram name="Page-1" id="tfWCany3ByORPSfWofWj">
-    <mxGraphModel>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" version="24.7.6" pages="2">
+  <diagram name="Diagram" id="tfWCany3ByORPSfWofWj">
+    <mxGraphModel dx="4097" dy="2206" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="62yLCssQTuLRH_1oGrT5-1" value="Client(Web Browser)" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="20" y="50" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="62yLCssQTuLRH_1oGrT5-2" value="&amp;lt;-- HTTPS --&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="70" y="60" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="62yLCssQTuLRH_1oGrT5-4" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="62yLCssQTuLRH_1oGrT5-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="100" as="sourcePoint" />
+            <mxPoint x="320" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="62yLCssQTuLRH_1oGrT5-5" value="Load Balancer" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="340" y="50" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="62yLCssQTuLRH_1oGrT5-6" value="Nginx" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="400" y="60" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="62yLCssQTuLRH_1oGrT5-7" value="Web Server" style="rounded=1;arcSize=10;strokeColor=none;fillColor=#DBDBDB;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="340" y="220" width="199.5" height="199.5" as="geometry" />
+        </mxCell>
+        <mxCell id="62yLCssQTuLRH_1oGrT5-8" value="Nginx + CSP" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="394.75" y="270" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="62yLCssQTuLRH_1oGrT5-10" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="62yLCssQTuLRH_1oGrT5-5" target="62yLCssQTuLRH_1oGrT5-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="150" as="sourcePoint" />
+            <mxPoint x="470" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="62yLCssQTuLRH_1oGrT5-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="62yLCssQTuLRH_1oGrT5-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="360" as="sourcePoint" />
+            <mxPoint x="200" y="410" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="200" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="62yLCssQTuLRH_1oGrT5-13" value="Frontend" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="410" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="62yLCssQTuLRH_1oGrT5-14" value="NextJs&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="160" y="410" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="62yLCssQTuLRH_1oGrT5-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="62yLCssQTuLRH_1oGrT5-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="330" as="sourcePoint" />
+            <mxPoint x="680" y="410" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="680" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="62yLCssQTuLRH_1oGrT5-16" value="Backend API " style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="410" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="62yLCssQTuLRH_1oGrT5-17" value="Node.js + Express.js" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="615" y="410" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="62yLCssQTuLRH_1oGrT5-18" value="Authentication Service " style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="500" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="62yLCssQTuLRH_1oGrT5-19" value="OAuth 2.0 + JWT" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="615" y="500" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="62yLCssQTuLRH_1oGrT5-21" value="Database" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="570" y="610" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="62yLCssQTuLRH_1oGrT5-22" value="PostgreSQL + Optimistic Concurrency" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="565" y="640" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="62yLCssQTuLRH_1oGrT5-23" value="Caching Layer " style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="575" y="740" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="62yLCssQTuLRH_1oGrT5-24" value="&#xa;Redis&#xa;&#xa;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="655" y="730" width="50" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="62yLCssQTuLRH_1oGrT5-25" value="Message Queue " style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="575" y="840" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="62yLCssQTuLRH_1oGrT5-26" value="&lt;br&gt;RabbitMQ&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="635" y="820" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="62yLCssQTuLRH_1oGrT5-27" value="Static Content (CDN)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="840" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="62yLCssQTuLRH_1oGrT5-29" value="Backend API" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="960" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="62yLCssQTuLRH_1oGrT5-30" value="RBAC System" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="960" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="62yLCssQTuLRH_1oGrT5-33" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="62yLCssQTuLRH_1oGrT5-13" target="62yLCssQTuLRH_1oGrT5-27">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="800" as="sourcePoint" />
+            <mxPoint x="610" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="62yLCssQTuLRH_1oGrT5-34" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="470" as="sourcePoint" />
+            <mxPoint x="680" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="62yLCssQTuLRH_1oGrT5-36" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="62yLCssQTuLRH_1oGrT5-21">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="560" as="sourcePoint" />
+            <mxPoint x="730" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="62yLCssQTuLRH_1oGrT5-37" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="62yLCssQTuLRH_1oGrT5-23">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="700" as="sourcePoint" />
+            <mxPoint x="730" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="62yLCssQTuLRH_1oGrT5-38" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="62yLCssQTuLRH_1oGrT5-25">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="800" as="sourcePoint" />
+            <mxPoint x="730" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="62yLCssQTuLRH_1oGrT5-42" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="62yLCssQTuLRH_1oGrT5-30" target="62yLCssQTuLRH_1oGrT5-29">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="230" y="1060" as="sourcePoint" />
+            <mxPoint x="280" y="1010" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="NccKSUvcc3zVN_vCXSBr" name="Notes">
+    <mxGraphModel dx="1434" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="fq5Xbhfw2GKnPfAHfifG-1" value="1. Registration&lt;div&gt;&lt;li&gt;New users must register and log in before participating in the auction.&lt;/li&gt;&lt;li&gt;Required data: full name, email address, phone number.&lt;/li&gt;&lt;li&gt;User authorization: normal user, administrator.&lt;br&gt;&lt;br&gt;2.Bidding&lt;/li&gt;&lt;li&gt;All registered users can see the details of the auctions.&lt;/li&gt;&lt;li&gt;Users can create a new auction with car brand, year, type, price, bid price increment, and expiry date.&lt;/li&gt;&lt;li&gt;Users can bid on any open auction.&lt;/li&gt;&lt;li&gt;Opening price is set by the admin.&lt;/li&gt;&lt;li&gt;Only the quickest bid is accepted when multiple people bid at the same time.&lt;br&gt;&lt;br&gt;3.Listing&lt;/li&gt;&lt;li&gt;There can only be one owner for each bid lot.&lt;/li&gt;&lt;li&gt;If there is a bidder, the listing will not close until closed by the owner.&lt;/li&gt;&lt;li&gt;The listing will be permanently deleted if expired without bids.&lt;br&gt;&lt;br&gt;4.Admin&lt;/li&gt;&lt;li&gt;Admin can expire a listing with no winner, permanently deleting the listing.&lt;/li&gt;&lt;li&gt;Admin can close any listing with no bidder, which remains open until closed by the owner.&lt;/li&gt;&lt;li&gt;Expired listings are removed from traffic.&lt;/li&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document;align=left;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="470" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="fq5Xbhfw2GKnPfAHfifG-2" value="&lt;h3&gt;Diagram Explanation:&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Client (Web Browser)&lt;/strong&gt;: Interacts with the entire system through HTTPS, ensuring secure communication.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Load Balancer&lt;/strong&gt;: Distributes incoming traffic and applies rate limiting to prevent abuse.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Web Server&lt;/strong&gt;: Uses CSP headers for security and forwards requests to the application server.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Application Server&lt;/strong&gt;: Handles the main application logic, divided into frontend and backend services.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Frontend (React.js)&lt;/strong&gt;: Renders the user interface.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Backend API (Node.js + Express.js)&lt;/strong&gt;: Handles business logic and data processing.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Authentication Service (OAuth 2.0 + JWT)&lt;/strong&gt;: Manages user authentication and authorization.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Database (PostgreSQL)&lt;/strong&gt;: Stores persistent data with optimistic concurrency control for handling bid conflicts.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Caching Layer (Redis)&lt;/strong&gt;: Provides fast access to frequently accessed data and temporary storage for bid conflicts.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Message Queue (RabbitMQ)&lt;/strong&gt;: Ensures ordered processing of bids and other time-sensitive operations.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Static Content (CDN)&lt;/strong&gt;: Delivers static content (e.g., images, stylesheets) efficiently.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;RBAC System&lt;/strong&gt;: Manages roles and permissions for users, integrated with the backend API.&lt;/li&gt;&lt;/ul&gt;" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document;align=left;" vertex="1" parent="1">
+          <mxGeometry x="40" y="470" width="510" height="400" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
